@@ -12,7 +12,7 @@ var hud
 var game
 
 func _ready():
-	 is_touchscreen = ["Android", "iOS", "HTML5"].has(OS.get_name())
+	 is_touchscreen = !["Android", "iOS", "HTML5"].has(OS.get_name())
 
 func destroy(_target):
 	graveyard.push_front(_target)

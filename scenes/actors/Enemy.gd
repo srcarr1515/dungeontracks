@@ -31,7 +31,7 @@ func _on_HurtBox_is_dead():
 	blood.global_position = global_position
 
 func _on_HurtBox_took_damage(amount, from):
-	hitbox_shape.disabled = true
+	hitbox_shape.call_deferred("set_disabled", true)
 
 func _on_DropTarget_timeout():
 	player = null
