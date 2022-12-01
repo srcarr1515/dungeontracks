@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/graphics/cars/CarSlices.png" type="Texture" id=1]
+[ext_resource path="res://library/graphics/StackedSprite.gd" type="Script" id=2]
+
+[node name="StackedSprite" type="Sprite"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 146, 117 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 1 )
+hframes = 11
+script = ExtResource( 2 )
+show_sprites = true
